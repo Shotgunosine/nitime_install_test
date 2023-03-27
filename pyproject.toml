@@ -18,8 +18,16 @@ classifiers = [
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
 ]
-dependencies = []
+dependencies = [
+"nitime"
+]
 dynamic = ["version"]
+
+[project.optional-dependencies]
+test = [
+  'datalad',
+  'pytest'
+]
 
 [project.urls]
 "Homepage" = "https://github.com/shotgunosine/nitime_install_test"
